@@ -1,3 +1,4 @@
+import { storiesOf } from '@storybook/html';
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
@@ -30,3 +31,6 @@ export class MyComponent {
     return <div>Hello, World! I'm {this.getText()}</div>;
   }
 }
+
+
+const Template: storiesOf<ComponentProps<typeof MyComponent>> = (args) => <MyComponent {...args} />;
