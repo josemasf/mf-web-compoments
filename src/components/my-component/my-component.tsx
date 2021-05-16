@@ -33,4 +33,4 @@ export class MyComponent {
 }
 
 
-const Template: storiesOf<ComponentProps<typeof MyComponent>> = (args) => <MyComponent {...args} />;
+//const Template: storiesOf<ComponentProps<typeof MyComponent>> = (args) => <MyComponent {...args} />;
